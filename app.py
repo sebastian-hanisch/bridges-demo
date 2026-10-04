@@ -286,7 +286,7 @@ st.markdown(
 | Annahme | Was passiert, wenn sie verletzt ist | Wer setzt an |
 |---|---|---|
 | **Ein Ausfall betrifft ein einzelnes Element** | Brücken und Artikulationspunkte sind die Antwort für *einen* Ausfall. Fallen zwei Straßen zugleich aus, können Paare von Straßen kritisch sein, die einzeln harmlos sind (Schnitte der Größe 2); das ist Zusammenhangs- und Flussrechnung. | Netzwerkfluss-Linie (Gomory-Hu, Menger) |
-| **Alle Ausfälle sind gleich schlimm** | Die Zahl der kritischen Elemente sagt nichts über den Schaden: nahe der Schwelle tragen die schlimmsten 10 % rund 60 % des Gesamtschadens, weiter davon entfernt nur ein Viertel bis ein Drittel. | Zentralität und Robustheit (Folgestücke) |
+| **Alle Ausfälle sind gleich schlimm** | Die Zahl der kritischen Elemente sagt nichts über den Schaden: nahe der Schwelle (Raster bei 40 bis 50 % gesperrt) tragen die schlimmsten 10 % rund 60 % des Gesamtschadens, weiter davon entfernt (Raster bei 20 bis 30 %, Zufallsgraph) nur ein Fünftel bis ein Drittel. | Zentralität und Robustheit (Folgestücke) |
 | **Zufällige Sperren** | Die Sperren sind gleichverteilt zufällig; echte Ausfälle sind gehäuft (Hochwasser, Streik) und gezielt. | Robustheit und Kaskaden (Folgestücke) |
 | **Die Verstärkung ist konstruiert** | Hier wird nur die kleinste Zahl fehlender Straßen ceil(Blätter / 2) gezählt; welche Paare man verbinden muss und ob diese Straßen gebaut werden können, ist eine eigene Aufgabe (und sie ignoriert Kosten und Geländemöglichkeiten). | Netzwerkdesign, Steiner-Bäume |
 | **Elementarschritte zeigen den Aufwand** | Sie zählen Knoten- und Kantenbesuche, keine Rechenzeit. | - |
