@@ -8,13 +8,13 @@ Zweites Stück der **Graphen-und-Netzwerke-Reihe** der "Konzepte"-Reihe für die
 
 ```
 1 BFS und DFS (Wurzel)                                                        [gebaut: bfs-dfs-demo]
- ├─ 2 Brücken und Artikulationspunkte ─ 4 Euler-Touren                        [DIESES STÜCK] [nicht gebaut]
- ├─ 3 Starke Zusammenhangskomponenten, topologische Sortierung                [nicht gebaut]
- ├─ 5 Graphfärbung                                                            [nicht gebaut]
- ├─ 6 Zentralität ─ 7 Strukturkennzahlen                                      [nicht gebaut]
- │        ├─ 8 Robustheit ─ 9 Kaskaden und Ausbreitung                        [nicht gebaut]
- │        └─ 10 Kritische Knoten härten                                       [nicht gebaut]
- └─ 11 Bandbreite ─ 12 Bandbreite von G(n,k,b) und Cliquenüberdeckung         [nicht gebaut]
+ ├─ 2 Brücken und Artikulationspunkte ─ 4 Euler-Touren                        [DIESES STÜCK] [gebaut: euler-tour-demo]
+ ├─ 3 Starke Zusammenhangskomponenten, topologische Sortierung                [gebaut: scc-demo]
+ ├─ 5 Graphfärbung                                                            [gebaut: graph-coloring-demo]
+ ├─ 6 Zentralität ─ 7 Strukturkennzahlen                                      [gebaut: centrality-demo, strukturkennzahlen-demo]
+ │        ├─ 8 Robustheit ─ 9 Kaskaden und Ausbreitung                        [gebaut: robustheit-demo, kaskaden-demo]
+ │        └─ 10 Kritische Knoten härten                                       [gebaut: haertung-demo]
+ └─ 11 Bandbreite ─ 12 Bandbreite von G(n,k,b) und Cliquenüberdeckung         [gebaut: bandbreite-demo, cliquenbandbreite-demo]
 ```
 
 Ergebnis in Kürze: **Der naive Ausfalltest kostet auf einem Straßennetz mit n Knoten das rund 2.3-Fache von n mal so viele Schritte wie eine Low-Link-Tiefensuche (n = 16: 34-fach, n = 196: 452-fach) – und die kritischen Elemente sind kein seltener Sonderfall: bei 30 % gesperrter Straßen sind 11 % der Straßen der größten Komponente Brücken und 14 % ihrer Kreuzungen Artikulationspunkte, bei 50 % gesperrt 44 % und 43 %.** Der Ausfallschaden ist nur nahe der Schwelle stark konzentriert (die schlimmsten 10 % der kritischen Elemente tragen bei 40 % gesperrt 61 % des Schadens, bei 20 % gesperrt 25 %; im Zufallsgraph 21 bis 33 %). Brückenfrei machen ließe sich das Netz mit **ceil(Blätter / 2)** neuen Straßen – ein Viertel bis die Hälfte so viele, wie es Brücken gibt.
@@ -126,3 +126,7 @@ venv\Scripts\streamlit run app.py
 - Eswaran, K. P., & Tarjan, R. E. (1976). *Augmentation problems.* SIAM Journal on Computing 5(4), 653–665.
 
 Gebaut mit Streamlit, Plotly, NumPy und pandas.
+
+---
+
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Graphen und Netzwerke: BFS bis Cliquenbandbreite](https://sebastianhanisch.net/konzepte-graphen-netzwerke.html).

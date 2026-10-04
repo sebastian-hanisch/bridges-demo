@@ -80,7 +80,7 @@ und eine Zahl je Knoten. Gemessen wird, was das spart, wie viele Elemente kritis
 """
 )
 st.caption(
-    "Kind der BFS-und-DFS-Demo (zweites Stück der Graphen-und-Netzwerke-Reihe); geplante Nachfolger (nicht gebaut): Euler-Touren (brauchen Brücken), Zentralität, Robustheit, Kaskaden, kritische Knoten härten, Bandbreite. "
+    "Kind der BFS-und-DFS-Demo (zweites Stück der Graphen-und-Netzwerke-Reihe); Folgestücke: Euler-Touren (brauchen Brücken), Zentralität, Robustheit, Kaskaden, kritische Knoten härten, Bandbreite. "
     "Die MST-Sensitivität (Spannbaum-Reihe) misst Brücken nur am Spannbaum; hier sind es die des Netzes selbst."
 )
 
@@ -321,6 +321,6 @@ Implementiert in `brg_algorithm.py` (Low-Link, naive Referenzen, Blöcke, Schade
 st.markdown("---")
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
-    "Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung für "
-    "Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Graphen und Netzwerke: BFS bis Cliquenbandbreite](https://sebastianhanisch.net/konzepte-graphen-netzwerke.html)."
 )
