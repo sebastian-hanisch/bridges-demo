@@ -4,7 +4,7 @@
 
 Zweites Stück der **Graphen-und-Netzwerke-Reihe** der "Konzepte"-Reihe für die Website "Sebastian Hanisch – Operations Research und Machine Learning", Kind der Durchmusterung ([bfs-dfs-demo](https://github.com/sebastian-hanisch/bfs-dfs-demo)). Dort wurde gemessen, wie ein Straßennetz beim Sperren zerfällt; als Grenze blieb, dass einzelne Straßen und Kreuzungen etwas anderes sind als zufällige Sperren: Manche Straße ist eine **Brücke** (ohne sie zerfällt das Netz), manche Kreuzung ein **Artikulationspunkt**. Der naive Weg, sie zu finden, entfernt jedes Element und zählt nach; **Tarjans Low-Link** braucht nur **eine** Tiefensuche und eine Zahl je Knoten. Die Demo misst vier Dinge: (1) **Low-Link in Aktion** – wie verrät low[u] > disc[p] eine Brücke? (2) **Kritische Straßen und Kreuzungen** – wie viele sind es, wie sehen Blöcke und Blockbaum aus? (3) **Ausfallschaden** – wie viele Knotenpaare verlieren beim Ausfall die Verbindung, und wie ungleich ist das verteilt? (4) **Aufwand und Verstärkung** – was spart Low-Link, und wie viele Straßen fehlen mindestens, damit keine Brücke bleibt?
 
-**Einordnung in die Reihe:** die Reihe hat zwölf Stücke, dies ist das zweite (Details in `graphen-planung/PLAN.md` des Portfolio-Ordners):
+**Einordnung in die Reihe:** die Reihe hat dreizehn Stücke (zwölf davon im Baum unten, dazu die Analyse-Karte `interne-verlinkung-demo`), dies ist das zweite des Baums (Details in `graphen-planung/PLAN.md` des Portfolio-Ordners):
 
 ```
 1 BFS und DFS (Wurzel)                                                        [gebaut: bfs-dfs-demo]
